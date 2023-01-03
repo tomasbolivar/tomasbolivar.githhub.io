@@ -6,201 +6,152 @@ using: manually written html/css based on deanstreetlab public repository from G
 -->
 <!doctype html>
 <html lang="en">
+  <head>
+    <title>
+      Tomas Bolivar - Marketing | Product Management | Brand Strategy | Performance | Finance | Data Science
+    </title>
+
+    <base target="_blank"> <!--for links opening in a new tab-->
+
+    <!--meta for google-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Product Marketing, Brand Strategy, Performance, Finance.">
+    <meta name="keywords" content="Tomas Bolivar, Marketing Manager">
+    <meta name="author" content="Tomas Bolivar">
+    <meta name="robots" content="max-snippet:35, index, follow">
+
+    <!--JQuery and Bootstrap-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" type="text/css"><!--Bootstrap CSS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--jquery-->
+    <script src="../assets/js/bootstrap.min.js"></script><!--Bootstrap JS-->
+
+    <!--styling, internal files-->
+    <link rel="stylesheet" href="css/home.css" type="text/css">
+
+    <!--other scripts-->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!--particles animation script and its related call script-->
+    <script src="js/particlesJSHelper.js"></script>
+    <script src="js/safariChecker.js"></script>
+
+    <!--icons-->
+    <link rel="icon" type="image/png" href="../assets/img/red-favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/red-apple-touch-icon.png">
     
-    
-     <head>
-        <title>
-            Tomas Bolivar - Marketing | Product Management | Brand Strategy | Performance | Finance | Data Science
-        </title>
-        
-        <base target="_blank"> <!--for links opening in a new tab-->
-        
-        <!--meta for google-->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Product Marketing, Brand Strategy, Performance, Finance.">
-        <meta name="keywords" content="Tomas Bolivar, Marketing Manager">
-        <meta name="author" content="Tomas Bolivar">
-        <meta name="robots" content="max-snippet:35, index, follow">
-        
-        <!--JQuery and Bootstrap-->
-        <link rel="stylesheet" href="../assets/css/bootstrap.min.css" type="text/css"><!--Bootstrap CSS-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--jquery-->
-        <script src="../assets/js/bootstrap.min.js"></script><!--Bootstrap JS-->
+    <!--script to load navigation menu into #nav-menu-container-->
+    <script src="../assets/js/navbar.js"></script>
+    <!--internal script-->
+    <script src="js/quoteLoader.js"></script>
 
-        <!--styling, internal files-->
-        <link rel="stylesheet" href="css/home.css" type="text/css">
-        
-        <!--other scripts-->
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!--particles animation script and its related call script-->
-        <script src="js/particlesJSHelper.js"></script>
-        <script src="js/safariChecker.js"></script>
+  </head>
 
-        <!--icons-->
-        <link rel="icon" type="image/png" href="../assets/img/red-favicon.png">
-        <link rel="apple-touch-icon" href="../assets/img/red-apple-touch-icon.png">
-        
-        <!--script to load navigation menu into #nav-menu-container-->
-        <script src="../assets/js/navbar.js"></script>
-        <!--internal script-->
-        <script src="js/quoteLoader.js"></script>
+  <body ontouchstart="">
 
-    </head>
+    <!--start, navigation menu--> 
+    <main id="nav-menu-container">
+      <section id="nav-menu">
+        <div id="nav-menu-content">
+            <ul class="nav-menu-content-column">
+                <li><a href="../home/home.html#about" target="_self" onclick="document.getElementById('checkbox').checked = false; "><span class="iconify" data-icon="cib:furry-network" data-inline="true"></span> About</a></li><!--inline js onlick to uncheck the checkbox which triggers the nav-menu hamburger, because the About page is below the landing page, s.t. the nav menu remains when clicking on About from landing page-->
+                <li><a href="../bookshelf/bookshelf.html" target="_self"><span class="iconify" data-icon="icomoon-free:books" data-inline="true"></span> Bookshelf</a></li>
+                <li><a href="../papers/papers.html" target="_self"><span class="iconify" data-icon="simple-icons:microsoftacademic" data-inline="true"></span> Papers</a></li>
+                <li><a href="../notes/notes.html" target="_self"><span class="iconify" data-icon="simple-icons:sqlite" data-inline="true"></span> Notes</a></li>
+                <li><a href="../gym/gym.html" target="_self"><span class="iconify" data-icon="fa-solid:dice-d6" data-inline="true"></span> Gym</a></li>
+            </ul>
+        </div>
+    </section>
+    </main>
+    <!--end, navigation menu-->
 
-    <body ontouchstart="">
-
-
-      <!--start, navigation menu--> 
-      <main id="nav-menu-container">        
-
+    <!--main page, page contents-->
+    <main id="mainpage-container">
+      <!--full-page landing page-->
+      <main id="landing">
+        <div id="box">
+          <section id="box1">
+              <div>
+                <h1>MARKETING | <span class="primary-color">PRODUCT MARKETING </span>| PERFORMANCE </h1>
+                <h1>DATA SCIENCE | <span class="primary-color">BRAND STRATEGY </span>| FINANCE</h1>
+              </div>
+          </section>
+        </div>
       </main>
-      <!--end, navigation menu-->
+      <!--end of landing page-->
 
 
+    <!--start of about page below landing page-->  
+    <main id="about">
+      <!--each part as a section, in which broken into a hero div and a contents div-->
 
-      <!--main page, page contents-->
-      <main id="mainpage-container">
+      <div class="container">
 
-          <!--full-page landing page-->
-          <main id="landing">
-            <div id="box">
-
-              <section id="box1">
-                  <div>
-                    <h1>MARKETING | <span class="primary-color">PRODUCT MARKETING </span>| PERFORMANCE </h1>
-                    <h1>DATA SCIENCE | <span class="primary-color">BRAND STRATEGY </span>| FINANCE</h1>
-                  </div>
-              </section>
-
-              <section id="box2">
-                  <div id="quote"></div>                  
-                  <div id="quote-by"></div>
-              </section>
-
-             </div>
-                  
-          </main>
-          <!--end of landing page-->
-          
-
-
-          
-      <!--start of about page below landing page-->  
-      <main id="about">
-        <!--each part as a section, in which broken into a hero div and a contents div-->
-
-        <div class="container">
-
-        <section class="row justify-content-center">
-       
-          <div class="col-8 col-md-6 col-lg-4" id="about-title">
-            <h1>Product Marketing, Brand Strategy, Performance & Finance</h1>
-            <h2>XXX <span class="primary-color">YYY</span> XXX XXX XXX</h2>
-          </div>
-
-        </section>
-
-        
-        <div class="row about-row justify-content-center">
-       
-          <div class="d-none d-md-block col-md-6">
-            <div id="particles-js"></div>
-          </div>
-
-         <div class="col-10 col-md-6">
-            <h2> Product Marketing </h2>
-            <p>Paragraph #1. </p>
-            <p>Paragraph #2. </p>
-            <p>Paragraph #3. </p>
-          </div>
-
+      <section class="row justify-content-center">
+        <div class="col-8 col-md-6 col-lg-4" id="about-title">
+          <h1>Product Marketing, Brand Strategy, Performance & Finance</h1>
+          <h2>XXX <span class="primary-color">YYY</span> XXX XXX XXX</h2>
         </div>
-        
+      </section>
 
-        <div class="row about-row justify-content-center">
-
-          <div class="col-10 col-md-6">
-            <h2> Brand Strategy </h2>
-            <p>Paragraph #1. </p>
-            <p>Paragraph #2. </p>
-            <p>Paragraph #3. </p>
-          </div>
-
-          <div class="d-none d-md-block col-md-6">
-            <div id="bayesian-hero-bg"></div>
-          </div>
-        
+      <div class="row about-row justify-content-center">
+        <div class="d-none d-md-block col-md-6">
         </div>
 
-
-        <div class="row about-row justify-content-center">
-          
-          <div class="d-none d-md-block col-md-6">
-          <div id="daily-hero-highlighter"></div>
-
-              
-          </div>
-
-
-          <div class="col-10 col-md-6">
-
-            <h2> Performance </h2>
-
-            <p>Paragraph #1. </p>
-            <p>Paragraph #2. </p>
-            <p>Paragraph #3. </p>
-        
-            
-          </div>  
-
+        <div class="col-10 col-md-6">
+          <h2> Product Marketing </h2>
+          <p>Paragraph #1. </p>
+          <p>Paragraph #2. </p>
+          <p>Paragraph #3. </p>
         </div>
-
-
-        <div class="row about-row justify-content-center">
-
-          <div class="col-10 col-md-6">
-            <h2> Finance </h2>
-            <p>Paragraph #1. </p>
-            <p>Paragraph #2. </p>
-            <p>Paragraph #3. </p>
-            
-          </div>
-
-          <div class="d-none d-md-block col-md-6">
-            <div id="language-dog"></div> 
-          </div>
-        
-        </div>
-
-        
-        <div class="row about-row justify-content-center">
-
-          <div class="d-none d-md-block col-md-6">
-            <div id="revolution-hero-bg"></div>            
-          </div>
-
-
-          <div class="col-10 col-md-6">
-            <h1> Interests </h1>
-            <p>Paragraph #1. </p>
-            <p>Paragraph #2. </p>
-            <p>Paragraph #3. </p>
-          </div>        
-            
-        </div>
-
-
 
       </div>
-      <!--end of container-->
-      </main>
-      <!--end of about page-->
-      </main>
-      <!--end of main page contents-->
 
 
+      <div class="row about-row justify-content-center">
+        <div class="col-10 col-md-6">
+          <h2> Brand Strategy </h2>
+          <p>Paragraph #1. </p>
+          <p>Paragraph #2. </p>
+          <p>Paragraph #3. </p>
+        </div>
+      </div>
 
 
-    </body>
+      <div class="row about-row justify-content-center">
+        <div class="col-10 col-md-6">
+          <h2> Performance </h2>
+          <p>Paragraph #1. </p>
+          <p>Paragraph #2. </p>
+          <p>Paragraph #3. </p>
+        </div>  
+      </div>
+
+
+      <div class="row about-row justify-content-center">
+        <div class="col-10 col-md-6">
+          <h2> Finance </h2>
+          <p>Paragraph #1. </p>
+          <p>Paragraph #2. </p>
+          <p>Paragraph #3. </p>
+        </div>        
+      </div>
+
+      
+      <div class="row about-row justify-content-center">
+        <div class="col-10 col-md-6">
+          <h1> Interests </h1>
+          <p>Paragraph #1. </p>
+          <p>Paragraph #2. </p>
+          <p>Paragraph #3. </p>
+        </div>        
+      </div>
+
+    </div>
+    <!--end of container-->
+    </main>
+    <!--end of about page-->
+    </main>
+    <!--end of main page contents-->
+
+  </body>
 
 </html>
