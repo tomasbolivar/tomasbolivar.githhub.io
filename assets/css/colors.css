@@ -1,7 +1,7 @@
 :root {
 
     /*default background color and font color are simple white and black*/
-    --background-color: rgb(245,245,245);
+    --background-color: rgba(245, 245, 245, 0.83);
     --background-color-rgb: 245, 245, 245; /*rgb for each color is included in case for rgba*/
     --font-color: rgb(72, 72, 72);
     --font-color-rgb: 72, 72, 72;
@@ -13,12 +13,12 @@
     --dark-bg-font-color-rgb: 245, 245, 245;
 
     /*various colours, red main (=LSE logo)*/
-    --red-color: rgb(237, 28, 46);
+    --gray-color: rgb(108, 103, 104);
     --red-color-rgb: 237, 28, 46; 
 
   }
 
  /*color definitions*/
 .primary-color {
-  color: var(--red-color);
+  color: var(--gray-color);
 }
