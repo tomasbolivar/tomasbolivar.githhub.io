@@ -50,108 +50,32 @@ using: manually written html/css based on deanstreetlab public repository from G
     <!--start, navigation menu--> 
     <main id="nav-menu-container">
       <section id="nav-menu">
-        <div id="nav-menu-content">
-            <ul class="nav-menu-content-column">
-                <li><a href="../home/home.html#about" target="_self" onclick="document.getElementById('checkbox').checked = false; "><span class="iconify" data-icon="cib:furry-network" data-inline="true"></span> About</a></li><!--inline js onlick to uncheck the checkbox which triggers the nav-menu hamburger, because the About page is below the landing page, s.t. the nav menu remains when clicking on About from landing page-->
-                <li><a href="../bookshelf/bookshelf.html" target="_self"><span class="iconify" data-icon="icomoon-free:books" data-inline="true"></span> Bookshelf</a></li>
-                <li><a href="../papers/papers.html" target="_self"><span class="iconify" data-icon="simple-icons:microsoftacademic" data-inline="true"></span> Papers</a></li>
-                <li><a href="../notes/notes.html" target="_self"><span class="iconify" data-icon="simple-icons:sqlite" data-inline="true"></span> Notes</a></li>
-                <li><a href="../gym/gym.html" target="_self"><span class="iconify" data-icon="fa-solid:dice-d6" data-inline="true"></span> Gym</a></li>
-            </ul>
-        </div>
-    </section>
+        <ul class="nav-menu-content-column">
+          <li><a href="../home/about.html" target="_self" onclick="document.getElementById('checkbox').checked = false; "><span class="iconify" data-icon="fa-solid:dice-d6" data-inline="true"></span> About</a></li><!--inline js onlick to uncheck the checkbox which triggers the nav-menu hamburger, because the About page is below the landing page, s.t. the nav menu remains when clicking on About from landing page-->
+          <li><a href="../bookshelf/bookshelf.html" target="_self"><span class="iconify" data-icon="icomoon-free:books" data-inline="true"></span> Career</a></li>
+          <li><a href="../papers/papers.html" target="_self"><span class="iconify" data-icon="simple-icons:microsoftacademic" data-inline="true"></span> Works</a></li>
+          <li><a href="../notes/notes.html" target="_self"><span class="iconify" data-icon="simple-icons:sqlite" data-inline="true"></span> Blog</a></li>
+          <li><a href="../gym/gym.html" target="_self"><span class="iconify" data-icon="ic:round-mail" data-inline="true"></span> Contact</a></li>
+        </ul>
+      </section>
     </main>
     <!--end, navigation menu-->
 
     <!--main page, page contents-->
     <main id="mainpage-container">
+
       <!--full-page landing page-->
       <main id="landing">
-        <div id="box">
-          <section id="box1">
-              <div>
-                <h1>MARKETING | <span class="primary-color">PRODUCT MARKETING </span>| PERFORMANCE </h1>
-                <h1>DATA SCIENCE | <span class="primary-color">BRAND STRATEGY </span>| FINANCE</h1>
-              </div>
-          </section>
-        </div>
+        <section id="box1">
+            <div>
+              <h1>MARKETING | <span class="primary-color">PRODUCT MARKETING </span>| PERFORMANCE </h1>
+              <h1>DATA SCIENCE | <span class="primary-color">BRAND STRATEGY </span>| FINANCE</h1>
+            </div>
+        </section>
       </main>
       <!--end of landing page-->
 
-
-    <!--start of about page below landing page-->  
-    <main id="about">
-      <!--each part as a section, in which broken into a hero div and a contents div-->
-
-      <div class="container">
-
-      <section class="row justify-content-center">
-        <div class="col-8 col-md-6 col-lg-4" id="about-title">
-          <h1>Product Marketing, Brand Strategy, Performance & Finance</h1>
-          <h2>XXX <span class="primary-color">YYY</span> XXX XXX XXX</h2>
-        </div>
-      </section>
-
-      <div class="row about-row justify-content-center">
-        <div class="d-none d-md-block col-md-6">
-        </div>
-
-        <div class="col-10 col-md-6">
-          <h2> Product Marketing </h2>
-          <p>Paragraph #1. </p>
-          <p>Paragraph #2. </p>
-          <p>Paragraph #3. </p>
-        </div>
-
-      </div>
-
-
-      <div class="row about-row justify-content-center">
-        <div class="col-10 col-md-6">
-          <h2> Brand Strategy </h2>
-          <p>Paragraph #1. </p>
-          <p>Paragraph #2. </p>
-          <p>Paragraph #3. </p>
-        </div>
-      </div>
-
-
-      <div class="row about-row justify-content-center">
-        <div class="col-10 col-md-6">
-          <h2> Performance </h2>
-          <p>Paragraph #1. </p>
-          <p>Paragraph #2. </p>
-          <p>Paragraph #3. </p>
-        </div>  
-      </div>
-
-
-      <div class="row about-row justify-content-center">
-        <div class="col-10 col-md-6">
-          <h2> Finance </h2>
-          <p>Paragraph #1. </p>
-          <p>Paragraph #2. </p>
-          <p>Paragraph #3. </p>
-        </div>        
-      </div>
-
-      
-      <div class="row about-row justify-content-center">
-        <div class="col-10 col-md-6">
-          <h1> Interests </h1>
-          <p>Paragraph #1. </p>
-          <p>Paragraph #2. </p>
-          <p>Paragraph #3. </p>
-        </div>        
-      </div>
-
-    </div>
-    <!--end of container-->
-    </main>
-    <!--end of about page-->
     </main>
     <!--end of main page contents-->
-
   </body>
-
 </html>
